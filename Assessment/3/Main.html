@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Monitoring System</title>
+    <script src="../HTML Page/3/add.json"></script>
+    <script>
+
+        let cat = new addrec();
+       
+
+       
+        function addRecord(){
+            let name = $("hname").value;
+            let city = $("hcity").value;
+            let type = $("htype").value;
+            let hotel = new addrec(id, name, address)
+            cat.addEmployee(emp);
+            $("hname").value ="";
+            $("hcity").value ="";
+            $("htype").value ="";
+            alert("Hotel added");
+        }
+
+        
+
+        
+    </script>
+</head>
+<body onload="init()">
+  
+    <div>
+        Enter Hotel Name: <input type="text" id="hname"/><br/>
+        Enter Hotel city:<input type="text" id="hcity"/><br/>
+        Enter Hotel type:<input type="text" id="htype"/><br/>
+        Create : <input type="submit" placeholder="create" onclick="addRecord()"/>
+    </div>
+    </section>
+</body>
+</html>
