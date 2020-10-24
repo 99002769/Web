@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details of Person</title>
+    <script>
+        function func()
+        {
+            if(document.getElementById("pname"))
+            {
+                document.getElementById("display").innerHTML="NAME :".join(uname);
+                
+            }
+            if(document.getElementById("pdob")){
+                document.getElementById("display").innerHTML="DOB :" +udob;
+            }
+            if(document.getElementById("pdegree"))
+            {
+                document.getElementById("display").innerHTML="Degree : "
+            }
+            if(document.getElementById("pgender"))
+            {
+                document.getElementById("display").innerHTML="Gender"
+            }
+            document.getElementById("display").innerHTML={
+            print(uname);}
+           
+            
+           
+        }
+    </script>
+    <style>
+        h1{
+            color: blue;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        body{
+            background-color: antiquewhite;
+        }
+        form{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Details of a person</h1>
+
+    <form>
+        Name : <input type = "text", id = "pname",name= "uname"/>
+        <br/><br/>
+        DOB : <input type = "date" id= "pdob"/>
+        <br/><br/>
+       Degree : <select name="pdegree">
+                <options value=0>BE</options>
+                <options value=1>BTech</options>
+                <options value=2>MBBS</options>
+                <options value=3>BSc</options>
+                </select>
+        <br/><br/>
+        <p name ="pgender"> Gender : <input type="radio" placeholder="Male" id="pmale"/>
+                <input type="radio" placeholder="Female" id="pfemale"/></p><br/><br/>
+    Submit <input type="submit" onclick="func()"/>
+    </form>
+    
+    <div id ="display">
+        
+    </div>
+</body>
+</html>

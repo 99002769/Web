@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: fit-content;
+            height: 100%;
+            padding-bottom: 10px;
+        }
+        body{
+            background-color: antiquewhite;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CRUD Operation</h1>
+    <div>
+    <form action = "http://loaclhost:1234/hotelCreate">
+        
+            Enter Hotel Name: <input type="text" name="hname"/><br/>
+            Enter Hotel city:<input type="text" name="hcity"/><br/>
+            Enter Hotel type:<input type="text" name="htype"/><br/>
+            Create : <input type="submit"/>
+    </form><br/><br/>
+    <form action = "http://loaclhost:1234/hotelUpdate">
+        
+        Enter Hotel Name: <input type="text" name="hname"/><br/>
+        Enter Hotel city:<input type="text" name="hcity"/><br/>
+        Enter Hotel type:<input type="text"name="htype"/><br/>
+        Update: <input type="submit"/>
+    </form><br/><br/>
+    <form action = "http://loaclhost:1234/hotelRead">
+            
+        Enter Hotel Name: <input type="text" name="hname"/><br/>
+        Enter Hotel city:<input type="text" name="hcity"/><br/>
+        Enter Hotel type:<input type="text" name="htype"/><br/>
+        Read : <input type="submit"/>
+    </form><br/><br/>
+    <form action = "http://loaclhost:1234/hotelDelete">
+            
+        Enter Hotel Name: <input type="text" name="hname"/><br/>
+        Enter Hotel city:<input type="text" name="hcity"/><br/>
+        Enter Hotel type:<input type="text" name="htype"/><br/>
+        Delete : <input type="submit"/>
+    </form><br/><br/>
+        </div>
+
+</body>
+</html>
